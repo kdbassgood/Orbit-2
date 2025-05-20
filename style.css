@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "لوح شمسي 400 واط",
+    "category": "ألواح شمسية",
+    "description": "لوح عالي الكفاءة يعمل بقدرة 400 واط.",
+    "image": "images/solar-panel.jpg"
+  },
+  {
+    "id": 2,
+    "name": "بطارية ليثيوم 200Ah",
+    "category": "بطاريات طاقة",
+    "description": "بطارية قوية طويلة الأمد لأنظمة الطاقة الشمسية.",
+    "image": "images/battery.jpg"
+  },
+  {
+    "id": 3,
+    "name": "انفرتر هجين 5000 واط",
+    "category": "محولات",
+    "description": "محول ذكي مع منظم شحن داخلي.",
+    "image": "images/inverter.jpg"
+  },
+  {
+    "id": 4,
+    "name": "منظم شحن MPPT",
+    "category": "منظمات شحن",
+    "description": "منظم كفاءة عالية مع شاشة رقمية.",
+    "image": "images/controller.jpg"
+  },
+  {
+    "id": 5,
+    "name": "كشاف شمسي 100 واط",
+    "category": "إضاءة شمسية",
+    "description": "إضاءة قوية للحدائق والطرق.",
+    "image": "images/led-light.jpg"
+  }
+]
