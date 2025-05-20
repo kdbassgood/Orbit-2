@@ -1,0 +1,23 @@
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("products.json")
+    .then((res) => res.json())
+    .then((products) => {
+      const grid = document.querySelector(".product-grid");
+      if (!grid) return;
+
+      products.forEach((product) => {
+        const card = document.createElement("div");
+        card.className = "product-card";
+        card.innerHTML = `
+          <img src="${product.image}" alt="${product.name}">
+          <h3>${product.name}</h3>
+          <p>${product.description}</p>
+          <button>طلب عرض سعر</button>
+        `;
+        grid.appendChild(card);
+      });
+    })
+    .catch((error) => {
+      console.error("فشل تحميل المنتجات:", error);
+    });
+});
