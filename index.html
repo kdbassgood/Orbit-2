@@ -1,68 +1,132 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!-- هذا الملف هو index.html الكامل لمتجر أوربت للطاقة الشمسية، مخصص للرفع على GitHub Pages --><!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>أوربت للطاقة الشمسية</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <title>أوربت - الصفحة الرئيسية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: #ff6a00;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .category {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+      text-align: center;
+    }
+    .category:hover {
+      transform: scale(1.02);
+    }
+    .category img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .category h3 {
+      font-size: 1.2rem;
+      padding: 1rem 1rem 0.5rem;
+      margin: 0;
+      color: #333;
+    }
+    .category button {
+      margin: 0.5rem 1rem 1rem;
+      padding: 0.6rem;
+      background-color: #ff6a00;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .category button:hover {
+      background-color: #e45a00;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #222;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <header class="main-header">
-    <div class="container nav-bar">
-      <h1 class="logo">أوربت</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">الرئيسية</a></li>
-          <li><a href="#products">المنتجات</a></li>
-          <li><a href="#about">من نحن</a></li>
-          <li><a href="#contact">تواصل معنا</a></li>
-          <li><a href="#login">تسجيل الدخول</a></li>
-        </ul>
-      </nav>
+  <header>
+    <h1>أوربت - متجر الطاقة الشمسية</h1>
+    <p>اختر فئتك لتصفح المنتجات</p>
+  </header>  <main class="categories">
+    <div class="category">
+      <a href="مراكز_طاقة_محمولة.html"><img src="https://i.imgur.com/qQYYzNm.jpeg" alt="مراكز طاقة محمولة"><h3>مراكز طاقة محمولة</h3></a>
+      <a href="مراكز_طاقة_محمولة.html"><button>استعرض المنتجات</button></a>
     </div>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <h2>حلول متكاملة للطاقة الشمسية</h2>
-      <p>منتجات عالية الجودة بأسعار تنافسية</p>
-      <a href="#products" class="btn">تصفح المنتجات</a>
+    <div class="category">
+      <a href="منتجات_طاقة_متجددة_متكاملة.html"><img src="https://i.imgur.com/XbqGxK4.jpeg" alt="منتجات طاقة متجددة متكاملة"><h3>منتجات طاقة متجددة متكاملة</h3></a>
+      <a href="منتجات_طاقة_متجددة_متكاملة.html"><button>استعرض المنتجات</button></a>
     </div>
-  </section>
-
-  <section id="products" class="products">
-    <div class="container">
-      <h2>المنتجات</h2>
-      <div class="product-grid"></div>
+    <div class="category">
+      <a href="أنظمة_إنارة_الطوارئ_الشمسية.html"><img src="https://i.imgur.com/wZ0l1fR.jpeg" alt="إنارة الطوارئ"><h3>إنارة الطوارئ الشمسية</h3></a>
+      <a href="أنظمة_إنارة_الطوارئ_الشمسية.html"><button>استعرض المنتجات</button></a>
     </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="container">
-      <h2>من نحن</h2>
-      <p>شركة متخصصة في توفير حلول ومعدات الطاقة الشمسية ومشتقاتها في الوطن العربي.</p>
+    <div class="category">
+      <a href="برمجيات_إدارة_الطاقة.html"><img src="https://i.imgur.com/UyLYQv7.jpeg" alt="برمجيات إدارة الطاقة"><h3>برمجيات إدارة الطاقة</h3></a>
+      <a href="برمجيات_إدارة_الطاقة.html"><button>استعرض المنتجات</button></a>
     </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>تواصل معنا</h2>
-      <form>
-        <input type="text" placeholder="الاسم الكامل" required>
-        <input type="email" placeholder="البريد الإلكتروني" required>
-        <textarea placeholder="رسالتك" required></textarea>
-        <button type="submit">إرسال</button>
-      </form>
+    <div class="category">
+      <a href="معدات_الاختبار_والمعايرة.html"><img src="https://i.imgur.com/sAF8JTk.jpeg" alt="معدات المعايرة"><h3>معدات الاختبار والمعايرة</h3></a>
+      <a href="معدات_الاختبار_والمعايرة.html"><button>استعرض المنتجات</button></a>
     </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>© 2025 أوربت للطاقة الشمسية - جميع الحقوق محفوظة</p>
+    <div class="category">
+      <a href="أنظمة_طاقة_شمسية_لمواقف_السيارات.html"><img src="https://i.imgur.com/cdHcgXz.jpeg" alt="مواقف السيارات"><h3>أنظمة طاقة شمسية لمواقف السيارات</h3></a>
+      <a href="أنظمة_طاقة_شمسية_لمواقف_السيارات.html"><button>استعرض المنتجات</button></a>
     </div>
+    <div class="category">
+      <a href="مستلزمات_تعليمية_وتجريبية.html"><img src="https://i.imgur.com/Ney9eIN.jpeg" alt="مستلزمات تعليمية"><h3>مستلزمات تعليمية وتجريبية</h3></a>
+      <a href="مستلزمات_تعليمية_وتجريبية.html"><button>استعرض المنتجات</button></a>
+    </div>
+    <div class="category">
+      <a href="أنظمة_تخزين_طاقة_حرارية.html"><img src="https://i.imgur.com/jM1La2b.jpeg" alt="تخزين الطاقة الحرارية"><h3>تخزين طاقة حرارية</h3></a>
+      <a href="أنظمة_تخزين_طاقة_حرارية.html"><button>استعرض المنتجات</button></a>
+    </div>
+    <div class="category">
+      <a href="أنظمة_حماية_الطاقة_الشمسية.html"><img src="https://i.imgur.com/SCMV2O1.jpeg" alt="أنظمة الحماية"><h3>أنظمة حماية الطاقة الشمسية</h3></a>
+      <a href="أنظمة_حماية_الطاقة_الشمسية.html"><button>استعرض المنتجات</button></a>
+    </div>
+    <div class="category">
+      <a href="خدمات_التمويل_والتأجير.html"><img src="https://i.imgur.com/NkE38mf.jpeg" alt="خدمات التمويل"><h3>خدمات التمويل والتأجير</h3></a>
+      <a href="خدمات_التمويل_والتأجير.html"><button>استعرض المنتجات</button></a>
+    </div>
+    <div class="category">
+      <a href="خدمات_ما_بعد_البيع_والصيانة.html"><img src="https://i.imgur.com/z2gF9Ml.jpeg" alt="الصيانة"><h3>خدمات ما بعد البيع والصيانة</h3></a>
+      <a href="خدمات_ما_بعد_البيع_والصيانة.html"><button>استعرض المنتجات</button></a>
+    </div>
+    <div class="category">
+      <a href="مستلزمات_التثبيت_والبنية_التحتية.html"><img src="https://i.imgur.com/5BVGxxr.jpeg" alt="البنية التحتية"><h3>مستلزمات التثبيت والبنية التحتية</h3></a>
+      <a href="مستلزمات_التثبيت_والبنية_التحتية.html"><button>استعرض المنتجات</button></a>
+    </div>
+  </main>  <footer>
+    &copy; 2025 أوربت - جميع الحقوق محفوظة | تصميم وتنفيذ ORBIT Energy Solutions
   </footer>
-
-  <script src="main.js"></script>
 </body>
-</html>
+</html> 
